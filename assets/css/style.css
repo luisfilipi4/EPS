@@ -62,6 +62,19 @@ TABLE OF CONTENTS:
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
 
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -139,8 +152,6 @@ a:focus {
     padding: 80px 0;
   }
 }
-
-.wrapper{position:fixed;bottom:100px;right:-370px;max-width:345px;width:100%;background:#000;border-radius:8px;padding:15px 25px 22px;transition:right .3s;box-shadow:0 5px 10px rgba(0,0,0,.1);z-index:9999}.wrapper.show{right:20px}.wrapper header{display:flex;align-items:center;column-gap:15px}#icone-cookie{color:#4070f4;font-size:32px}header h2{color:#4070f4;font-weight:500}.wrapper .data{margin-top:16px}.wrapper .data p{color:#fff;font-size:16px}.data p a{color:#4070f4}.data p a:hover{text-decoration:underline}.wrapper .buttons{margin-top:16px;width:100%;display:flex;align-items:center;justify-content:space-between}.buttons .button{border:none;color:#fff;padding:8px 0;border-radius:4px;background:#4070f4;cursor:pointer;width:calc(100% / 2 - 10px);transition:.2s}.buttons #acceptBtn:hover{background-color:#034bf1}#declineBtn{border:2px solid #000;background-color:#fff;color:#4070f4}#declineBtn:hover{background-color:#4070f4;color:#fff}@media (min-width:991.98px){.facts{position:relative;margin-top:-75px;z-index:1}}
 
 /*** back to top **/
 .back-to-top {
@@ -461,12 +472,15 @@ mobile menu
 }
 
 .slicknav_nav {
-    background: #2a2d2d;
+    background: #142440;
+    border: 1px solid #509DE9;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
-    background: #3a3a3a;
+    background: #509DE9;
 }
 
 .slicknav_nav .slicknav_arrow {
@@ -493,7 +507,7 @@ mobile menu
 }
 
 .slicknav_nav a:hover {
-    background: #3a3a3a;
+    background: #509DE9;
     color: #fff;
 }
 
@@ -531,7 +545,7 @@ mobile menu
     margin-top: 3px;
 }
 .btn-style a:hover{
-  background:#31b5e1; 
+  background:#142440; 
 }
 
 
@@ -731,6 +745,7 @@ mobile menu
   margin-top: -70px;
 }
 
+
 .section-icon {
   text-align: center;
   margin-top: -60px;
@@ -798,6 +813,9 @@ mobile menu
   font-size: 50px;
   font-weight: 600;
   line-height: 75px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
 }
 
 .blue {
@@ -812,7 +830,8 @@ mobile menu
 }
 .about-content h2{
   font-size: 30px;
-  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
   position: relative;
   padding-bottom:8px;
   margin-bottom: 30px;
@@ -900,25 +919,6 @@ mobile menu
 .section-title span {
   font-size: 16px;
   color: #509DE9;
-}
-
-.section-title h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #333;
-  padding-bottom: 20px;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.section-title h2:before {
-  content: "";
-  position: absolute;
-  left: 47%;
-  bottom: 0;
-  width: 60px;
-  height: 3px;
-  background: #509DE9;
 }
 
 .service-single {
@@ -1030,7 +1030,8 @@ mobile menu
 .service-area.service-s2 .service-item .service-single h2 {
   font-size: 20px;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
 }
 
 .service-area.service-s2 .service-item .service-single p {
@@ -1125,6 +1126,7 @@ mobile menu
 .features-text h3 {
   font-size: 25px;
 }
+
 .features-item .fi{
   color:#509DE9; 
 }
@@ -1132,9 +1134,58 @@ mobile menu
     transform: rotate(45deg);
     display: inline-block;
 }
+
+.item-service {
+  transition: transform 0.3s; /* Transição para o ícone */
+}
+.item-service:hover {
+  transform: scale(1.1); /* Efeito de crescimento ao passar o mouse */
+}
 .feature-wrap{
   margin-bottom: 35px;
 }
+
+.business-hours {
+  padding: 200px 0;
+  border-radius: 8px;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.business-hours h2 {
+  font-size: 2.5rem;
+  color: #142440;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.business-hours table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.business-hours th, 
+.business-hours td {
+  padding: 15px;
+  border: 1px solid #021d3a;
+  text-align: center;
+}
+
+.business-hours th {
+  background-color: #021d3a;
+  color: #fff;
+}
+
+.business-hours tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.business-hours tr:hover {
+  background-color: #509DE9;
+  color: white;
+}
+
 /*==========================================
 1.0 counter-area start
 ===========================================*/
@@ -1227,7 +1278,6 @@ mobile menu
 
 .map-section {
   padding: 60px 0;
-  margin-top: 15rem;
   position: relative;
 }
 
@@ -1243,8 +1293,9 @@ mobile menu
 .map-content h2 {
   font-size: 2.5rem;
   color: #142440;
-  margin-bottom: 20px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
 }
 
 .map-content p {
@@ -1295,6 +1346,30 @@ mobile menu
   }
 }
 
+.zoom-container {
+  position: relative;
+  overflow: hidden; /* Oculta partes fora da caixa */
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-map {
+  transition: transform 0.1s ease;
+  width: 100%;
+  height: auto;
+  transform-origin: center center;
+}
+
+.map-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-image:hover .zoom-map {
+  transform: scale(1.5); /* Ajuste o valor para mais ou menos zoom */
+  cursor: crosshair;
+}
+
 .map-section-gps {
   position: relative;
   padding: 60px 0; /* Espaçamento superior e inferior */
@@ -1316,8 +1391,8 @@ mobile menu
 .map-title h2 {
   font-size: 2.5rem;
   color: #142440;
-  font-weight: bold;
-  margin: 0; /* Remover margem */
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
 }
 
 .map-title p {
@@ -1362,9 +1437,12 @@ mobile menu
   text-align: center;
   background: #f6f6f6;
   transition: all .3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
 }
 .price-item:hover{
   background: #e7f9ff;
+  transform: translateY(-10px); /* Move o item para cima 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
 }
 .pricing-header h3{
   color: #fff;
@@ -1374,7 +1452,7 @@ mobile menu
 }
 .pricing-header {
     padding: 25px 0 13px;
-    background: #509DE9;
+    background: #142440;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1388,7 +1466,6 @@ mobile menu
     top: 33px;
     width: 100%;
     height: 68%;
-    background: url(../images/pricing/2.png) no-repeat center center / cover;
     z-index: -1;
 }
 .price-sub-header {
@@ -1439,13 +1516,15 @@ mobile menu
 
 .section-title h2 {
   font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 15px;
+  color: #142440;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .section-title p {
   font-size: 1.1rem;
-  color: #555;
+  color: #000;
 }
 
 /* Estilo do formulário */
@@ -1466,7 +1545,7 @@ mobile menu
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: #000;
 }
 
 .input-form input,
@@ -1476,20 +1555,21 @@ mobile menu
   border: 1px solid #dcdcdc;
   border-radius: 6px;
   font-size: 1rem;
-  color: #333;
+  color: #000;
 }
 
 .input-form input:focus,
 .input-form select:focus {
-  border-color: #009688;
+  border-color: #509DE9;
   outline: none;
 }
 
 .submit-btn {
-  background-color: #009688;
+  background-color: #509DE9;
   color: #fff;
   border: none;
   padding: 12px 25px;
+  margin-top: 5px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
@@ -1497,14 +1577,14 @@ mobile menu
 }
 
 .submit-btn:hover {
-  background-color: #00796b;
+  background-color: #509DE9;
 }
 
 .result-message {
   margin-top: 15px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #009688;
+  color: #000;
 }
 
 @media (min-width: 768px) {
@@ -1521,15 +1601,9 @@ mobile menu
   border-radius: 8px;
 }
 
-.section-title h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
 .section-title p {
   font-size: 1.1rem;
-  color: #555;
+  color: #000;
 }
 
 /* Estilo do formulário */
@@ -1560,17 +1634,17 @@ mobile menu
   border: 1px solid #dcdcdc;
   border-radius: 6px;
   font-size: 1rem;
-  color: #333;
+  color: #000;
 }
 
 .input-form input:focus,
 .input-form select:focus {
-  border-color: #009688;
+  border-color: #509DE9;
   outline: none;
 }
 
 .submit-btn {
-  background-color: #009688;
+  background-color: #509DE9;
   color: #fff;
   border: none;
   padding: 12px 25px;
@@ -1581,14 +1655,14 @@ mobile menu
 }
 
 .submit-btn:hover {
-  background-color: #00796b;
+  background-color: #509DE9;
 }
 
 .result-message {
   margin-top: 15px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #009688;
+  color: #509DE9;
 }
 
 @media (min-width: 768px) {
@@ -1613,7 +1687,8 @@ mobile menu
 .vendor h2 {
   text-align: center;
   color: #142440;
-  font-weight: bold;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -1621,7 +1696,7 @@ mobile menu
 .vendor p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #000;
 }
 
 .owl-carousel {
@@ -1636,6 +1711,40 @@ mobile menu
 
 .owl-nav {
   display: none; /* Ocultar os botões de navegação (setas) por padrão */
+}
+
+.client-area {
+  padding: 60px 0; /* Espaçamento superior e inferior */
+}
+
+.client-content h2 {
+  text-align: center;
+  color: #142440;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.client-content p {
+  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+  color: #666; /* Cor do texto do parágrafo */
+}
+
+.client-logo {
+  margin: 15px; /* Espaçamento entre as logos */
+  transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.client-logo img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.client-logo:hover {
+  transform: translateY(-10px); /* Levanta a logo ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
 }
 
 /* Estilos gerais para o accordion */
@@ -1865,9 +1974,10 @@ mobile menu
 }
 
 .section-tittle h2 {
-  color: #333;
-  font-size: 32px;
-  margin-bottom: 15px;
+  color: #142440;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .section-tittle p {
@@ -1935,7 +2045,8 @@ mobile menu
   font-size: 2.5rem;
   color: #142440;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
 }
 
 /* Responsividade */
@@ -1993,30 +2104,39 @@ mobile menu
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  /* Aqui definimos 2 colunas em telas grandes e 1 coluna em telas menores */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px; /* Reduzimos o espaçamento entre os itens */
+  padding: 20px;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0; /* Removemos o padding para que as imagens ocupem o bloco completo */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .gallery-item img {
   width: 100%;
-  cursor: pointer;
-  object-fit: cover;
+  height: 100%; /* Garantimos que a imagem preencha o espaço */
+  object-fit: cover; /* Faz com que a imagem se ajuste corretamente, cortando o excesso se necessário */
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Adiciona um pequeno efeito de zoom ao passar o mouse */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .gallery {
+    /* Em telas menores, reduzimos para 1 coluna para melhorar a visualização */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .hidden {
@@ -2153,6 +2273,10 @@ mobile menu
 }
 
 @media (max-width: 768px) {
+}
+
+
+@media (max-width: 768px) {
   .filter-btn {
       padding: 8px 15px;
       font-size: 14px;
@@ -2226,6 +2350,11 @@ padding-right: 50px;
 .footer-link{
   overflow: hidden;
 }
+
+#blocos-imgs {
+  display: flex;
+  flex-direction: column;
+}
 .footer-link ul{
   width: 75%;
   float: left;
@@ -2273,9 +2402,7 @@ padding-right: 50px;
   left: 0;
   top: 5px;
 }
-.footer-address ul li .cont{
-  padding-left: 35px;
-}
+
 .footer-address ul li .cont p{
   color: #fff;
 }
@@ -2307,6 +2434,72 @@ padding-right: 50px;
 #a-link:hover {
   color: #000;
   text-decoration: underline;
+}
+
+/* Cookie Banner Styles */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #142440;
+  color: #fff;
+  padding: 20px;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cookie-banner p {
+  color: white;
+}
+
+.cookie-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cookie-link {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+  background-color: #1c86ee;
+}
+
+@media (min-width: 768px) {
+  .cookie-container {
+      flex-direction: row;
+  }
+
+  .cookie-text {
+      margin-bottom: 0;
+      text-align: left;
+  }
 }
 
 /*============================
@@ -2811,200 +3004,6 @@ padding-right: 50px;
 }
 
 
-/*.====================================
-6.0 blog-detais-area start
-========================================*/
-
-/*===================================================
-7.0 contact-page-area-start
-=======================================================*/
-
-.contact-page-area .contact-map {
-    height: 450px;
-    margin-top: 100px;
-    cursor: pointer;
-}
-
-.contact-page-area .contact-map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    outline: 0;
-}
-
-.contact-page-item h2 {
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.contact-page-item h3 {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.contact-page-item span {
-    color: #666;
-    display: block;
-    padding-bottom: 10px;
-}
-
-.contact-page-item .adress {
-    margin-bottom: 20px;
-}
-
-.contact-page-item .phone {
-    margin-bottom: 20px;
-}
-
-.contact-area {
-    padding-top: 0px;
-    padding-bottom: 0;
-}
-
-.contact-area h2 {
-    margin-bottom: 40px;
-    font-size: 30px;
-}
-.contact-area form,
-.contact-area-s2 form {
-    overflow: hidden;
-    margin: 0 -15px;
-}
-
-.contact-area form .half-col,
-.contact-area-s2 form .half-col {
-    width: 50%;
-    float: left;
-}
-
-@media (max-width: 600px) {
-
-    .contact-area form .half-col,
-    .contact-area-s2 form .half-col {
-        width: 100%;
-        float: left;
-    }
-}
-
-.contact-area form div,
-.contact-area-s2 form div {
-    padding: 0 15px 30px;
-}
-
-
-.contact-area form .submit-btn-wrapper,
-.contact-area-s2 form .submit-btn-wrapper {
-    padding-bottom: 0;
-}
-
-.contact-area form input,
-.contact-area-s2 form input,
-.contact-area form textarea,
-.contact-area-s2 form textarea,
-.contact-area-s2 form select {
-    background: #f5f5f5;
-    height: 50px;
-    padding: 6px 15px;
-    color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 1px solid rgba(192, 181, 150, .5);
-}
-
-.contact-area select.form-control:not([size]):not([multiple]) {
-    height: 50px;
-    padding: 6px 15px;
-    color: #bbb5a5;
-    border: 2px solid #ddd;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 1px solid rgba(192, 181, 150, .5);
-    position: relative;
-    -webkit-appearance:none;   
-    -ms-appearance:none;      
-    -o-appearance:none;                 
-    appearance:none;
-    -moz-appearance: none;
-}
-
-.contact-area form input:focus,
-.contact-area-s2 form input:focus,
-.contact-area form textarea:focus,
-.contact-area-s2 form textarea:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-color: #ccc;
-}
-
-
-.contact-area form textarea,
-.contact-area-s2 form textarea {
-    height: 150px;
-    padding: 15px;
-}
-
-.contact-validation-active #success,
-.contact-validation-active #error {
-    width: 100%;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 16px;
-    text-align: center;
-    display: none;
-}
-
-.contact-validation-active #loader {
-    display: none;
-    margin-top: 10px;
-}
-
-.contact-section form .submit-btn-wrapper,
-.contact-section-s2 form .submit-btn-wrapper {
-    padding-bottom: 0;
-}
-
-.theme-btn-s3 {
-    border-radius: 0;
-    text-transform: uppercase;
-}
-
-.contact-validation-active .error-handling-messages {
-    margin-top: 15px;
-}
-
-.contact-validation-active #error {
-    background-color: #ff1a1a;
-    border-left: 5px solid red;
-}
-
-.contact-validation-active label.error {
-    color: red;
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin: 5px 0 0 0;
-    text-align: left;
-    display: block;
-}
-.theme-btn-s3 {
-    background-color:#509DE9;
-    font-size: 15px;
-    font-weight: 700;
-    color: #fff;
-    padding: 9px 25px;
-    border: 2px solid transparent;
-    text-transform: capitalize;
-    display: inline-block;
-    transition: all .3s;
-}
-
-.theme-btn-s3:hover {
-    background: #31b5e1;
-}
 /*====================================
 8.0 service-page
 ======================================*/

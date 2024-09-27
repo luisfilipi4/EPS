@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $extra_service = htmlspecialchars($_POST['extra_service']);
     
     // Define o e-mail do destinatário
-    $to = "evandro@epscargaslogistica.com.br";
+    $to = "contato@epscargaslogistica.com.br";
     
     // Assunto do e-mail
     $subject = "Solicitação de Orçamento de " . $nome;
