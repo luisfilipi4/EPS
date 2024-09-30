@@ -1246,7 +1246,6 @@ pre code {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
-        max-width: 25%;
     }
     .col-lg-4 {
         -webkit-box-flex: 0;
@@ -6866,6 +6865,7 @@ button.bg-dark:hover {
 .mt-5,
 .my-5 {
     margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
 }
 .mr-5,
 .mx-5 {
